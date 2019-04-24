@@ -14,8 +14,13 @@ Collection of Chinese Input Methods implemented by Java
 
 #### Others
 
-#####  How to install the Java IME extension
-Copy the *.jar file to folder %JAVA_HOME%/jre/lib/ext/
+#####  How to use the Java IME extension
+There are 2 ways to use the Java IME extension
+* Copy the IME *.jar file to folder %JAVA_HOME%/jre/lib/ext/
+* Use -Djava.ext.dirs to import the IME file:
+```
+java -Djava.ext.dirs=c:\mylib\ime.jar -jar app.jar
+```
 
 ##### IME Java App
 It's input box for entering Chinese with Java IME.
